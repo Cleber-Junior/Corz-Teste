@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilização pagina Clientes*/
+
+
+
+.insere, .cadastra{
+    background-color: green;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.notascliente{
+    background-color: black;
+    color: #FFFFFF;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/* Estilização pagina Notas*/
+main{
+    margin: 10px;
+}
+.deletaprod{
+    background-color: red;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: small;
+    padding: 3px;
+    margin: 3px;
+}
+
+.produto{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    margin-left: 5px;
+    align-items: center;
+}
+
+.edita{
+    background-color: blue;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 2px;
+}
+
+.deletanota{
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: small;
+    padding: 2px;
+    margin: 2px;
+}
+
+.info_prod{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.links{
+    margin: 20px;
+    gap: 10px;
+    width: 25%;
+    border-radius: 5px;
+
+}
+
+.links a{
+
+    color: #000000;
+    text-decoration: none;
+    padding: 5px;
+
+}
+

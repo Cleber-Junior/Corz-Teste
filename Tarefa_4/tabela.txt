@@ -1,0 +1,33 @@
+create database gerenciamento;
+
+use gerenciamento;
+
+create table clients(
+    id_cliente int (6) auto_increment primary key,
+    nome varchar(50) not null,
+    email varchar(35) not null
+);
+
+create table invouces(
+    id_invouces int (6) auto_increment primary key,
+    client_id integer not null,
+    total_value numeric(6,2),
+    emission_date Date,
+    foreign key (client_id) references clients(id_cliente)
+);
+
+create table products(
+    id_products int (6) auto_increment primary key,
+    name varchar(100),
+    unitary_value numeric(6,2)
+);
+
+create table items(
+    id_items int (6) auto_increment primary key,
+    product_id integer not null,
+    invouce_id integer not null,
+    amount int,
+    total_item_value numeric(6,2),
+    foreign key (product_id) references products(id_products) on delete cascade,
+    foreign key (invouce_id) references invouces(id_invouces) on delete cascade
+);
